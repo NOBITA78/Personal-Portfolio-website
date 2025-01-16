@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/fff515805f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./Images/IN_logo_corrected.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>Hi, I'm <span>Imran</span><br />From India</h1>
+        </div>
+      </div>
+    </div>
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="./Images/WhatsApp Image 2024-12-25 at 22.02.47_06e12913.jpg"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I’m Imran U, a passionate Electronics and Communication
+              Engineering student with a strong interest in Embedded Systems,
+              IoT, and Full Stack Development. I’ve worked on innovative
+              projects like IoT-based safety systems and real-time ECG signal
+              processing, combining technology with real-world impact. As a
+              Smart India Hackathon participant, I’ve tackled challenges in
+              women’s safety and carbon neutrality. Currently, I’m exploring
+              quantum technology for satellite communication and enhancing my
+              skills in programming and development.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Achievements')">
+                Achievements
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Full Stack Developer</span><br />Building responsive and
+                  dynamic web applications with expertise in front-end and
+                  back-end technologies.
+                </li>
+                <li>
+                  <span>Embedded Engineer</span><br />Designing and programming
+                  embedded systems to create innovative IoT and hardware
+                  solutions.
+                </li>
+                <li>
+                  <span>VLSI Designer</span><br />Crafting efficient and
+                  optimized digital and analog circuit designs for cutting-edge
+                  semiconductor technologies.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Government Boys Higher Secondary School, Ponneri</span
+                  ><br />Completed Grades 6 to 12
+                </li>
+                <li>
+                  <span>J.N.N Institute of Engineering</span><br />Pursuing a
+                  Bachelor of Engineering in Electronics and Communication
+                  Engineering (ECE) (2022 - 2026)
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2024 - Current</span><br />Gained experience in MERN
+                  Stack through Udemy and the 30-Day Full Stack Challenge.
+                </li>
+                <li>
+                  <span>2024 - Current</span><br />Worked on IoT and Embedded
+                  Systems during training at Pantech eLearning and an internship
+                  at Next24Tech.
+                </li>
+                <li>
+                  <span>2024 - Current</span><br />Learned VLSI Design and
+                  Simulation through a 4-week course on Internshala Trainings.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Achievements">
+              <ul>
+                <li>
+                  <span>Internship Completion in IoT Development</span
+                  ><br />Successfully completed an IoT development internship at
+                  Next24Tech, showcasing expertise in embedded systems, IoT, and
+                  Arduino programming.
+                </li>
+                <li>
+                  <span>Selected for Smart India Hackathon 2024</span
+                  ><br />Selected for multiple problem statements in SIH 2024,
+                  including women's safety analytics, water body monitoring, and
+                  alumni association platforms, demonstrating innovation and
+                  problem-solving skills.
+                </li>
+                <li>
+                  <span>Bluetooth-Controlled Weeder Machine</span
+                  ><br />Developed a prototype of a Bluetooth-controlled weeder
+                  machine with integrated soil analysis capabilities, showcasing
+                  innovative thinking in agricultural automation.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services Section -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code-branch"></i>
+            <h2>Web Application</h2>
+            <p>
+              I develop dynamic web applications using the MERN stack, ensuring
+              seamless front-end and back-end integration. I focus on clean,
+              scalable, and efficient code.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-raspberry-pi"></i>
+            <h2>Embedded Systems</h2>
+            <p>
+              I design IoT solutions and embedded systems, focusing on hardware
+              integration and firmware development for reliable, innovative
+              applications.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-microchip"></i>
+            <h2>Vlsi Design</h2>
+            <p>
+              I design and simulate digital and analog circuits, optimizing for
+              performance and efficiency in advanced semiconductor applications.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/Blog Website.jpeg" />
+            <div class="layer">
+              <h3>Blog Platform</h3>
+              <p>
+                A content management system where users can create, edit, and
+                share blog posts, with support for categories, tags, and
+                comments.
+              </p>
+              <a
+                href="https://dev.to/aviyel/building-a-mern-stack-simple-blog-site-from-absolute-scratch-5pm#:~:text=Building%20a%20MERN%20stack%20simple%20blog%20site%20from,boilerplate%20cleanup%20...%205%20Installing%20some%20packages%20"
+                ><i class="fa-solid fa-square-arrow-up-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/Air quality project.jpeg" />
+            <div class="layer">
+              <h3>Air Quality Monitoring System with ESP32 and IoT</h3>
+              <p>
+                A real-time air quality monitoring system using ESP32 and IoT to
+                measure and display environmental parameters like CO2, PM2.5,
+                and humidity. Data is visualized on a cloud platform, enabling
+                remote monitoring and analysis for better decision-making.
+              </p>
+              <a
+                href="https://www.hackster.io/dudelabweb/air-quality-monitoring-made-easy-an-iot-project-with-esp32-ee2777?utm_source=chatgpt.com"
+                ><i class="fa-solid fa-square-arrow-up-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/ALU Project.webp" />
+            <div class="layer">
+              <h3>8-bit ALU design</h3>
+              <p>
+                The 8-bit ALU project designs a circuit to perform operations
+                like addition, subtraction, shifts, and logic functions,
+                controlled by a 3-bit opcode.
+              </p>
+              <a
+                href="https://shepherdingelectrons.blogspot.com/2021/05/8-bit-computer-alu.html?utm_source=chatgpt.com"
+                ><i class="fa-solid fa-square-arrow-up-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>ef524440@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9003195901</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/imran-usman-932034259/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/call__me__imran_4/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://github.com/NOBITA78"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="Paste the downloadadable file here" class="btn btn2"
+              >Download Cv</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Your Email Id"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Enter Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copywrite">
+        <p>copywrite by <i class="fa-solid fa-star"></i>Imran</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyPRQKJdDltPmaAedLnI_3JtD-Hi6s1WtmgvWDx6JeqFajGNhMZ0wtDvKkV0UyFzEUF9Q/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Your message has been sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
